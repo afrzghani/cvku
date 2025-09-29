@@ -59,7 +59,7 @@
     "tailwind-merge": "^3.3.1",
     "tailwindcss-animate": "^1.0.7",
     "vaul": "^0.9.9",
-    "zod": "3.25.67",
+    "zod": "3.25.76",
     "ai": "5.0.54",
     "@ai-sdk/groq": "2.0.22"
   },
