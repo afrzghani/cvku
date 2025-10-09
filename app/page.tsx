@@ -146,7 +146,7 @@ export default function Page() {
         <h2>Ringkas CV Secara Otomatis</h2>
         <p>Tekan tombol di bawah untuk menghasilkan ringkasan singkat CV ini.</p>
         <AISummarizer targetSelector=".cv-container" />
-        <p className="cv-note">Catatan: ringkasan AI dapat mengandung kekeliruan. Periksa kembali sebelum digunakan.</p>
+        <p className="cv-note">Catatan: ringkasan AI dapat mengandung kekeliruan.</p>
       </section>
     </>
   )
