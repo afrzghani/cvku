@@ -108,7 +108,7 @@ export function AISummarizer({ targetSelector = "#cv-content", language = "id" }
 
   return (
     <div>
-      <button className="ai-button" onClick={handleSummarize} disabled={!canSummarize} aria-busy={loading}>
+      <button className="cv-ai-button" onClick={handleSummarize} disabled={!canSummarize} aria-busy={loading}>
         {loading ? "Sedang merangkum…" : "Ringkas CV saya"}
       </button>
       
@@ -119,7 +119,7 @@ export function AISummarizer({ targetSelector = "#cv-content", language = "id" }
       )}
 
       {summary && (
-        <div className="ai-result" style={{ whiteSpace: "pre-wrap", lineHeight: 1.6, marginTop: "1rem" }}>
+        <div className="cv-ai-result" style={{ whiteSpace: "pre-wrap", lineHeight: 1.6, marginTop: "1rem" }}>
           {summary}
         </div>
       )}

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -70,9 +72,255 @@
 
 @layer base {
   * {
-    @apply border-border;
+    border-color: hsl(var(--border));
+    font-family: 'Montserrat', sans-serif;
   }
   body {
-    @apply bg-background text-foreground;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
   }
+  html {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+a{
+  color: inherit;
+  text-decoration: none;
+}
+.cv-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.cv-header {
+  background-color: #2a2a2a;
+  border-radius: 12px;
+  padding: 30px;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  border: 1px solid #3a3a3a;
+}
+
+.cv-foto-profil {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #d4d4d4;
+  flex-shrink: 0;
+}
+
+.cv-foto-profil img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+.cv-header-info h1 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.cv-kontak-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  font-size: 0.9rem;
+  color: #cccccc;
+}
+
+.cv-kontak {
+  padding: 2px 0;
+}
+
+.cv-section {
+  margin-bottom: 50px;
+}
+
+.cv-section h2 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+  color: #ffffff;
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.cv-section h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 60px;
+  height: 2px;
+  background-color: #666666;
+}
+
+.cv-section p {
+  font-size: 1rem;
+  color: #cccccc;
+  line-height: 1.8;
+  max-width: 700px;
+}
+
+.cv-timeline {
+  background-color: #2a2a2a;
+  border-radius: 12px;
+  padding: 25px 30px;
+  margin-bottom: 20px;
+  border: 1px solid #3a3a3a;
+  box-shadow: #0b0b0b 0px 4px 6px -1px;
+  transition: all 0.3s ease;
+}
+
+.cv-judul-timeline {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+
+.cv-judul-timeline h3 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #ffffff;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.cv-tgl-timeline {
+  font-size: 0.9rem;
+  color: #888888;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.cv-subteks-timeline {
+  font-size: 1rem;
+  color: #cccccc;
+  margin-bottom: 15px;
+  font-weight: 400;
+}
+
+.cv-timeline-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cv-timeline-list li {
+  font-size: 0.95rem;
+  color: #cccccc;
+  margin-bottom: 6px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.cv-timeline-list li::before {
+  content: '•';
+  color: #666666;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+.cv-timeline:hover {
+  background-color: #2f2f2f;
+  transform: translateY(-2px);
+}
+
+.cv-ai {
+  background-color: #2a2a2a;
+  border-radius: 12px;
+  padding: 28px;
+  margin: 20px 0;
+  border: 1px solid #3a3a3a;
+  box-shadow: #0b0b0b 0px 4px 6px -1px;
+  max-width: 764px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cv-ai h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.cv-ai p {
+  color: #cccccc;
+  font-size: 1rem;
+  margin-bottom: 18px;
+}
+
+.cv-ai-button {
+  background: #c3c3c3;
+  color: #18181b;
+  border: none;
+  padding: 0.9rem 2.2rem;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+  transition: background .2s, color .2s;
+  box-shadow: 0 2px 8px #0002;
+  display: inline-block;
+}
+
+.cv-ai-button[disabled] {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.cv-ai-button:hover:not([disabled]) {
+  background: #c3c3c3;
+  color: #fff;
+}
+
+.cv-ai-result {
+  background: #1a1a1a;
+  border-radius: 10px;
+  border: 1px solid #3a3a3a;
+  color: #fff;
+  padding: 1.2rem;
+  margin: 0 0 1.5rem 0;
+  font-size: 1.08rem;
+  text-align: left;
+  word-break: break-word;
+}
+
+.cv-note {
+  color: #94a3b8;
+  font-size: 0.97rem;
+  margin-top: 1rem;
+}
+
+@keyframes cv-fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.cv-section {
+  opacity: 1;
+  animation: cv-fadeInUp 0.6s ease-out;
+}
 }
