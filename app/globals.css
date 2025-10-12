@@ -111,22 +111,22 @@ a{
   .cv-header {
     flex-direction: column;
     gap: 16px;
-    padding: 8px;
+    padding: 16px;
     text-align: center;
   }
   .cv-header-info {
     align-items: center;
   }
   .cv-foto-profil img {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
   }
   .cv-header-info h1 {
     font-size: 1.5rem !important;
     margin-bottom: 12px;
   }
   .cv-kontak-info {
-    font-size: 0.8rem !important;
+    font-size: 0.7rem !important;
     gap: 4px;
   }
 }
