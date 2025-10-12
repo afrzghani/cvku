@@ -111,7 +111,7 @@ a{
   .cv-header {
     flex-direction: column;
     gap: 16px;
-    padding: 16px;
+    padding: 8px;
     text-align: center;
   }
   .cv-header-info {
