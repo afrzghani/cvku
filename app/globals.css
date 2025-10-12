@@ -87,7 +87,7 @@
 
 a{
   color: inherit;
-  text-decoration: none;
+  
 }
 .cv-container {
   max-width: 800px;
@@ -123,6 +123,20 @@ a{
   display: block;
 }
 
+.cv-placeholder-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e5e5e5;
+  color: #666;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+}
+
 .cv-header-info h1 {
   font-size: 2.5rem;
   font-weight: 300;
@@ -141,6 +155,22 @@ a{
 
 .cv-kontak {
   padding: 2px 0;
+}
+
+@media (max-width: 600px) {
+  .cv-header {
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+    text-align: center;
+  }
+  .cv-header-info {
+    align-items: center;
+  }
+  .cv-foto-profil img {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 .cv-section {
