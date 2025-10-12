@@ -118,8 +118,16 @@ a{
     align-items: center;
   }
   .cv-foto-profil img {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
+  }
+    .cv-header-info h1 {
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+  }
+  .cv-kontak-info {
+    font-size: 0.8rem;
+    gap: 4px;
   }
 }
 
