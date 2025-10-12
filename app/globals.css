@@ -107,6 +107,22 @@ a{
   border: 1px solid #3a3a3a;
 }
 
+@media (max-width: 600px) {
+  .cv-header {
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+    text-align: center;
+  }
+  .cv-header-info {
+    align-items: center;
+  }
+  .cv-foto-profil img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
 .cv-foto-profil {
   width: 120px;
   height: 120px;
